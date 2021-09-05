@@ -13,13 +13,75 @@
     font-family: HelveticaNeueLTPro-Lt;
     src: url(fonts/HelveticaNeueLTPro-Lt.otf);
    }
-   @font-face {
-    font-family: HelveticaNeueLTPro-Roman;
-    src: url(fonts/HelveticaNeueLTPro-Roman.otf); 
+    @font-face {
+      font-family: HelveticaNeueLTPro-Roman;
+      src: url(fonts/HelveticaNeueLTPro-Roman.otf); 
    }
-   @font-face {
-    font-family: HelveticaNeueLTStd-Bd;
-    src: url(fonts/HelveticaNeueLTStd-Bd.otf); 
+    @font-face {
+      font-family: HelveticaNeueLTStd-Bd;
+      src: url(fonts/HelveticaNeueLTStd-Bd.otf); 
+   }
+    @media (max-width: 3200px) {
+      .congrats-subtitle br,
+      .more-section-th br {
+        display: none;
+      }
+    }
+    @media (max-width: 576px) {
+      .thank-section-td td,
+      .congrats-td td,
+      .more-section-td td {
+        display: block !important;
+      }
+      .thank-section-img{
+        width: 290px !important;
+        display: block !important;
+        margin: 0 auto;
+      }
+      .thank-section-img-td {
+        border-right: none;
+        width: inherit;
+        padding: 0 20px !important;
+      }
+      .thank-section-th {
+        padding-top: 40px !important;
+      }
+      .thanks-desktop-text,
+      .medium-table-padding-column,
+      .more-section-divider {
+        display: none !important;
+      }
+      .thanks-mobile-text {
+        display: inherit !important;
+        line-height: 24px !important;
+      }
+      .thanks-section-question {
+        padding-left: 20px !important;
+        padding-bottom: 65px !important;
+      }
+      .agents-table,
+      .agency-partner-table {
+        width: 100%;
+      }
+      .congrats-th {
+        font-size: 28px;
+      }
+      .congrats-subtitle {
+        line-height: 25px;
+      }
+      .congrats-subtitle br,
+      .more-section-th br {
+        display: inherit !important;
+      }
+      .last-td-congrats-table {
+        padding-bottom: 50px !important;
+      }
+     
+      .more-section-img-td {
+        width: 320px;
+        height: 180px;
+        margin: 0 auto;
+      }
    }
   </style>
 </head>
@@ -30,37 +92,43 @@
         <table style="border-collapse: collapse;" border="1" width="640" cellspacing="0" cellpadding="0" align="center">
           <tbody>
             <tr>
-              <td align="center" width="100 %" style="padding-bottom: 35px" bgcolor="#ffffff">
+              <td align="center" style="padding-bottom: 40px" bgcolor="#ffffff">
                 <img alt="Quarterly broker blast picture" src="assets/imgs/hero-image.jpg">
               </td>
             </tr>
              <!-- THANK YOU SECTION -->
             <tr>
-              <td>
+              <td class="thank-section-td">
                 <table bgcolor="#ffffff" style="border-collapse: collapse;" border="1" width="640" cellspacing="0" cellpadding="0" align="center">
                   <tr>
-                    <td style="padding-top: 20px; padding-left: 20px; padding-right: 20px; border-right: #0377a8 solid 1px;" width="100 %">
-                      <img alt="" src="assets/imgs/thank-you-img.jpg" width="165">
+                    <td class="thank-section-img-td" style="border-right: #0377a8 solid 1px; padding: 20px 20px 20px 40px">
+                      <img class="thank-section-img" alt="building" src="assets/imgs/thank-you-img.jpg" width="165">
                     </td>
-                    <td>
+                    <td >
                       <table>
                         <tr>
-                          <th style="color:#0276a5; font-size: 38px;padding-left: 20px; padding-bottom: 15px; padding-top: 30px; font-family: 'Raleway', sans-serif; font-weight: 800;" align="left">THANK YOU!</th>
+                          <th class="thank-section-th" style="padding-left: 20px; padding-bottom: 5px; padding-top: 15px; color:#0276a5; font-size: 38px; font-family: 'Raleway', sans-serif; font-weight: 800;" align="left">THANK YOU!</th>
                         </tr>
-                        <tr>
-                          <td style="padding-left: 20px; color:#343b41; font-family: 'HelveticaNeueLTPro-Lt'; line-height: 24px; letter-spacing: 0.18px;">This is an exciting time for all of us here at Alignment.Together we have achieved impressive business results by leading with a sense of purpose-to put the senior first in everything we do. Our IPO itself is not the finishline, but rather is another inflection
+                        <!-- HIDDEN TR - MOBILE VERSION-->
+                        <tr class="thanks-mobile-text" style="display: none;">
+                          <td style="padding: 0 20px; color:#545556; font-family: 'HelveticaNeueLTPro-Lt'; font-size: 18px; line-height: 24px; letter-spacing: 0.18px;">This is an exciting time for all of us here at Alignment.Together we have achieved impressive business results by leading with a sense of purpose-to put the senior first in everything we do. Our IPO itself is not the finishline, but rather is another inflection point. It marks the beginning of the next phase of our journey to achieve our mission to change healthcare one senior at a time.
+                          </td>
+                        </tr>
+                        <!-- DESKTOP VERSION-->
+                        <tr class="thanks-desktop-text">
+                          <td style="padding-left: 20px; padding-right: 45px; color:#545556; font-family: 'HelveticaNeueLTPro-Lt'; font-size: 18px; line-height: 24px; letter-spacing: 0.18px;">This is an exciting time for all of us here at Alignment.Together we have achieved impressive business results by leading with a sense of purpose-to put the senior first in everything we do. Our IPO itself is not the finishline, but rather is another inflection 
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
-                  <tr>
-                    <td colspan="2" style="padding-left: 20px; color:#343b41; font-family: 'HelveticaNeueLTPro-Lt'; line-height: 24px; letter-spacing: 0.18px;">point. It marks the beginning of the next phase of our journey to achieve our mission to change healthcare one senior at a time.
+                  <tr class="thanks-desktop-text">
+                    <td colspan="2" style="padding-left: 40px; padding-right: 45px; color:#545556; font-family: 'HelveticaNeueLTPro-Lt'; font-size: 18px; line-height: 24px; letter-spacing: 0.18px;">point. It marks the beginning of the next phase of our journey to achieve our mission to change healthcare one senior at a time.
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="2" style="padding-left: 20px; padding-top: 20px; color:#343b41; font-family: 'HelveticaNeueLTPro-Lt'; line-height: 24px; letter-spacing: 0.18px; padding-bottom: 60px;">
-                      <span style="color:#0276a5; font-family: 'Raleway', sans-serif; font-weight: 700">What does IPO mean to you?</span> A promising future for Alignment Health Care. Bigger, Faster Better. Look for us to expand our footprint and Benefits.
+                    <td class="thanks-section-question" colspan="2" style="padding-left: 40px; padding-right: 20px; padding-top: 20px; color:#545556; font-family: 'HelveticaNeueLTPro-Lt'; font-size: 18px; line-height: 24px; letter-spacing: 0.18px; padding-bottom: 60px;">
+                      <span style="color:#0276a5; font-family: 'Raleway', sans-serif; font-weight: 700;">What does IPO mean to you?</span> A promising future for Alignment Health Care. Bigger, Faster Better. Look for us to expand our footprint and Benefits.
                     </td>
                   </tr>
                 </table>
@@ -68,39 +136,61 @@
             </tr>
              <!-- CONGRATULATIONS SECTION -->
             <tr>
-              <td style="padding-top: 30px;" bgcolor="#109aa7">
+              <td class="congrats-td" style="padding-top: 30px;" bgcolor="#109aa7">
                 <table style="border-collapse: collapse; color: #ffffff;" border="1" width="640" cellspacing="0" cellpadding="0" align="center" >
                   <tr>
-                    <th style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 32px; line-height: 28px; letter-spacing: 1.6px; padding-bottom: 10px;" colspan="2">CONGRATULATIONS!
+                    <th class="congrats-th" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 32px; line-height: 28px; letter-spacing: 1.6px; padding-bottom: 10px;" colspan="2">CONGRATULATIONS!
                     </th>
                   </tr>
                   <tr>
-                    <td colspan="2" align="center" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 18px; line-height: 28px; padding-bottom: 40px;">Congratulations to our top 5 agency partners and agents.
+                    <td class="congrats-subtitle" colspan="2" align="center" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 18px; line-height: 28px; padding-bottom: 40px;">Congratulations to our<br/> top 5 agency partners and agents.
                     </td>
                   </tr>
                   <tr>
-                    <td style="padding-left: 20px; padding-bottom: 20px;" width="50%">Agency Partners</td>
-                    <td style="padding-left: 20px; padding-bottom: 20px" width="50%">Agents</td>
-                  </tr>
-                  <tr>
-                    <td style="padding-left: 20px; padding-bottom: 20px" width="50%">1</td>
-                    <td style="padding-left: 20px; padding-bottom: 20px" width="50%">1</td>
-                  </tr>
-                  <tr>
-                    <td style="padding-left: 20px; padding-bottom: 20px" width="50%">2.</td>
-                    <td style="padding-left: 20px; padding-bottom: 20px;" width="50%">2.</td>
-                  </tr>
-                  <tr>
-                    <td style="padding-left: 20px; padding-bottom: 20px;" width="50%">3.</td>
-                    <td style="padding-left: 20px; padding-bottom: 20px;" width="50%">3.</td>
-                  </tr>
-                  <tr>
-                    <td style="padding-left: 20px; padding-bottom: 20px;" width="50%">4.</td>
-                    <td style="padding-left: 20px; padding-bottom: 20px;" width="50%">4.</td>
-                  </tr>
-                  <tr>
-                    <td style="padding-left: 20px; padding-bottom: 20px;" width="50%">5.</td>
-                    <td style="padding-left: 20px; padding-bottom: 40px;" width="50%">5.</td>
+                    <td class="agency-partner-table" width="50%">
+                      <table style="color: #ffffff; font-size: 18px;">
+                        <tr>
+                          <td class="agency-td" style="padding-left: 20px; padding-bottom: 20px;">Agency Partners</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px">1</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px">2.</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px;">3.</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px;">4.</td>
+                        </tr>
+                        <tr>
+                          <td class="last-td-congrats-table" style="padding-left: 20px; padding-bottom: 35px;">5.</td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="agents-table" width="50%">
+                      <table style="color: #ffffff; font-size: 18px;">
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px">Agents</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px">1</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px">2.</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px;">3.</td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left: 20px; padding-bottom: 20px;">4.</td>
+                        </tr>
+                        <tr>
+                          <td class="last-td-congrats-table" style="padding-left: 20px; padding-bottom: 35px;">5.</td>
+                        </tr>
+                      </table>
+                    </td>
                   </tr>
                   <!-- white space between two sections -->
                   <tr>
@@ -112,10 +202,10 @@
             </tr>
              <!-- MORE ABOUT ALIGNMENT SECTION -->
             <tr>
-              <td>
+              <td class="more-section-td" >
                 <table style="border-collapse: collapse; color: #e1e1e1;" border="1" width="640" cellspacing="0" cellpadding="0" align="center">
                  <tr>
-                   <th colspan="5" style="padding-top: 30px; padding-left: 20px; color: #0276a5; font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 32px;" align="left">WANT TO LEARN MORE ABOUT ALIGNMENT?</th>
+                   <th class="more-section-th" colspan="5" style="padding-top: 30px; padding-left: 20px; color: #0276a5; font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 32px; line-height: 38px;" align="left">WANT TO LEARN<br/> MORE ABOUT<br/> ALIGNMENT?</th>
                  </tr>
                  <tr>
                    <td colspan="5" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 18px; line-height: 28px; letter-spacing: 0.18px; color: #545556; padding-top: 20px; padding-left: 20px; padding-bottom: 20px;">
@@ -129,8 +219,8 @@
                    <td>
                     <table>
                        <tr>
-                         <td width="290px" height="155px" bgcolor="#109aa7">
-                           <img width="290px" height="155px" style="object-fit: cover;" alt="eldery man with eldery woman" src="assets/imgs/more1.jpg">
+                         <td class="more-section-img-td" width="290px" height="155px" bgcolor="#109aa7">
+                           <img class="more-section-img" width="100%" height="100%" style="object-fit: cover;" alt="eldery man with eldery woman" src="assets/imgs/more1.jpg">
                          </td>
                        </tr>
                        <tr>
@@ -143,19 +233,19 @@
                          <td style="font-family: 'HelveticaNeueLTStd-Bd'; font-size: 16px; line-height: 28px; letter-spacing: 0.18px; color: #2f2f30">07/12/2021 10AM PST / 1PM EST</td>
                        </tr>
                        <tr>
-                         <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px;">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
+                         <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
                         </td>
                       </tr>
                     </table>
                   </td>
                   <!-- PADDING BETWEEN TABLE COLUMNS -->
-                  <td width="20"></td>
+                  <td class="medium-table-padding-column" width="20"></td>
                   <!-- SECOND CELL OF TABLE -->
                   <td>
                     <table>
                       <tr>
                         <td width="290px" height="155px" bgcolor="#109aa7">
-                          <img width="290px" height="155px" style="object-fit: cover;" balt="eldery man with girl" src="assets/imgs/more2.jpg">
+                          <img width="100%" height="100%" style="object-fit: cover;" balt="eldery man with girl" src="assets/imgs/more2.jpg">
                         </td>
                        </tr>
                        <tr>
@@ -171,7 +261,7 @@
                           </td>
                        </tr>
                        <tr>
-                          <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px;">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
+                          <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
                           </td>
                       </tr>
                     </table>
@@ -180,16 +270,16 @@
                   <td width="20"></td>
                 </tr>
                  <!-- SPACE BETWEEN TOP AND BOTTOM PARTS OF MORE SECTION -->
-                <tr height="45"></tr>
+                <tr class="more-section-divider" height="45"></tr>
                 <tr>
-                <!-- PADDING BETWEEN TABLE COLUNMNS -->
+                <!-- PADDING BEFORE TABLE COLUNMN -->
                   <td width="20"></td>
                   <!-- third part -->
                   <td>
                     <table>
                       <tr>
                         <td width="290px" height="155px" bgcolor="#109aa7">
-                          <img width="290px" height="155px" style="object-fit: cover;" alt="elderly man and woman smiling" src="assets/imgs/more3.jpg">
+                          <img width="100%" height="100%" style="object-fit: cover;" alt="elderly man and woman smiling" src="assets/imgs/more3.jpg">
                         </td>
                       </tr>
                       <tr>
@@ -205,19 +295,19 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px;">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
+                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
                         </td>
                       </tr>
                     </table>
                   </td>
                     <!-- PADDING BETWEEN TABLE COLUMNS -->
-                  <td width="20"></td>
-                <!-- fourth part -->
+                  <td class="medium-table-padding-column" width="20"></td>
+                <!-- FOURTH PART -->
                   <td>
                     <table>
                       <tr>
                         <td width="290px" height="155px" bgcolor="#109aa7">
-                          <img width="290px" height="155px" style="object-fit: cover;" alt="three elderly men" src="assets/imgs/more4.jpg">
+                          <img width="100%" height="100%" style="object-fit: cover;" alt="three elderly men" src="assets/imgs/more4.jpg">
                         </td>
                       </tr>
                       <tr>
@@ -233,7 +323,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px;">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
+                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
                         </td>
                       </tr>
                     </table>
