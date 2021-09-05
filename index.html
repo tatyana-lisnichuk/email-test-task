@@ -27,11 +27,20 @@
         display: none;
       }
     }
+     @media (max-width: 660px) {
+      .table-640 {
+        width: 560px;
+      }
+     }
+
     @media (max-width: 576px) {
       .thank-section-td td,
       .congrats-td td,
       .more-section-td td {
         display: block !important;
+      }
+      .table-640 {
+        width: 520px;
       }
       .thank-section-img{
         width: 290px !important;
@@ -83,23 +92,28 @@
         margin: 0 auto;
       }
    }
+   @media (max-width: 480px) {
+     .table-640 {
+        width: 440px;
+      }
+   }
   </style>
 </head>
 <body style="margin: 0; padding: 0;" bgcolor="#f2f2f2">
-  <table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <table cellpadding="0" cellspacing="0" align="center">
     <tr>
       <td>
-        <table style="border-collapse: collapse;" border="1" width="640" cellspacing="0" cellpadding="0" align="center">
+        <table class="table-640" style="border-collapse: collapse;" width="640px" cellspacing="0" cellpadding="0" align="center">
           <tbody>
             <tr>
               <td align="center" style="padding-bottom: 40px" bgcolor="#ffffff">
-                <img alt="Quarterly broker blast picture" src="assets/imgs/hero-image.jpg">
+                <img alt="Quarterly broker blast picture" src="assets/imgs/hero-image.jpg" width="100%" style="object-fit: contain;">
               </td>
             </tr>
              <!-- THANK YOU SECTION -->
             <tr>
               <td class="thank-section-td">
-                <table bgcolor="#ffffff" style="border-collapse: collapse;" border="1" width="640" cellspacing="0" cellpadding="0" align="center">
+                <table class="table-640" bgcolor="#ffffff" style="border-collapse: collapse;" cellspacing="0" cellpadding="0" align="center">
                   <tr>
                     <td class="thank-section-img-td" style="border-right: #0377a8 solid 1px; padding: 20px 20px 20px 40px">
                       <img class="thank-section-img" alt="building" src="assets/imgs/thank-you-img.jpg" width="165">
@@ -137,7 +151,7 @@
              <!-- CONGRATULATIONS SECTION -->
             <tr>
               <td class="congrats-td" style="padding-top: 30px;" bgcolor="#109aa7">
-                <table style="border-collapse: collapse; color: #ffffff;" border="1" width="640" cellspacing="0" cellpadding="0" align="center" >
+                <table class="table-640" style="border-collapse: collapse; color: #ffffff;" width="640" cellspacing="0" cellpadding="0" align="center" >
                   <tr>
                     <th class="congrats-th" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 32px; line-height: 28px; letter-spacing: 1.6px; padding-bottom: 10px;" colspan="2">CONGRATULATIONS!
                     </th>
@@ -192,18 +206,18 @@
                       </table>
                     </td>
                   </tr>
-                  <!-- white space between two sections -->
-                  <tr>
-                    <td colspan="2" height="60px" bgcolor="#ffffff">
+                </table>
+                 <!-- white space between two sections -->
+                <tr>
+                    <td colspan="4" height="60px" bgcolor="#ffffff">
                     </td>
                   </tr>
-                </table>
               </td>
             </tr>
              <!-- MORE ABOUT ALIGNMENT SECTION -->
             <tr>
               <td class="more-section-td" >
-                <table style="border-collapse: collapse; color: #e1e1e1;" border="1" width="640" cellspacing="0" cellpadding="0" align="center">
+                <table class="table-640" style="border-collapse: collapse; background-color: #e1e1e1;" width="640" cellspacing="0" cellpadding="0" align="center">
                  <tr>
                    <th class="more-section-th" colspan="5" style="padding-top: 30px; padding-left: 20px; color: #0276a5; font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 32px; line-height: 38px;" align="left">WANT TO LEARN<br/> MORE ABOUT<br/> ALIGNMENT?</th>
                  </tr>
@@ -215,7 +229,7 @@
                  <tr>
                    <!-- PADDING BEFORE THE TABLE COLUMN -->
                    <td width="20"></td>
-                   <!-- FIRST CELL OF TABLE -->
+                   <!-- FIRST CELL OF THE TABLE -->
                    <td>
                     <table>
                        <tr>
@@ -240,7 +254,7 @@
                   </td>
                   <!-- PADDING BETWEEN TABLE COLUMNS -->
                   <td class="medium-table-padding-column" width="20"></td>
-                  <!-- SECOND CELL OF TABLE -->
+                  <!-- SECOND CELL OF THE TABLE -->
                   <td>
                     <table>
                       <tr>
@@ -274,7 +288,7 @@
                 <tr>
                 <!-- PADDING BEFORE TABLE COLUNMN -->
                   <td width="20"></td>
-                  <!-- third part -->
+                  <!-- THIRD PART -->
                   <td>
                     <table>
                       <tr>
@@ -295,7 +309,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
+                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556; padding-bottom: 50px;">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
                         </td>
                       </tr>
                     </table>
@@ -323,7 +337,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
+                        <td align="left" style="font-family: 'HelveticaNeueLTPro-Roman'; font-size: 16px; line-height: 22px; letter-spacing: 0.18px; color: #545556; padding-bottom: 50px;">Join on your computer or mobile app <a href="#" style="color:#109aa7; font-family: 'Raleway', sans-serif; font-weight: 700;">CLICK HERE</a> to join the meeting, or call in (audio only)<br/><span style="font-family: 'HelveticaNeueLTStd-Bd'; color: #545556;">(866) 789-6243,,180919972#</span>
                         </td>
                       </tr>
                     </table>
@@ -331,18 +345,19 @@
                   <!-- PADDING AFTER THE TABLE COLUMN -->
                   <td width="20"></td>
                 </tr>
+                
+                </table>
                  <!-- WHITE SPACE BETWEEN TWO SECTIONS -->
                 <tr>
                   <td colspan="5" height="60px" bgcolor="#ffffff">
                   </td>
                 </tr>
-                </table>
               </td>
             </tr>
             <!-- FOOTER -->
             <tr>
               <td>
-                <table style="border-collapse: collapse; color: #d3d3d3;" border="1" width="640" cellspacing="0" cellpadding="0" align="center" bgcolor="#0d3b5d">
+                <table class="table-640" style="border-collapse: collapse; color: #d3d3d3;" width="640" cellspacing="0" cellpadding="0" align="center" bgcolor="#0d3b5d">
                   <tr>
                     <td colspan="5" align="center" style="padding-top: 30px; padding-bottom: 35px;">
                       <a href="#"><img alt="logo" src="assets/imgs/logo.png"></a>
